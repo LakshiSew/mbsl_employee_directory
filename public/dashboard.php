@@ -105,6 +105,12 @@ $role = Session::get("role");
                 </div>
 
                 <div class="topbar-right">
+
+                    <!-- 🌙 DARK MODE BUTTON -->
+                    <button id="darkModeToggle" class="dark-toggle-btn me-3">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
                     <span class="role-badge">
                         <i class="bi bi-person-badge-fill me-1"></i>
                         <?php echo ucfirst(htmlspecialchars($role)); ?>
@@ -128,9 +134,7 @@ $role = Session::get("role");
             <div class="row g-4 mb-4">
                 <div class="col-xl-3 col-md-6">
                     <div class="stat-card purple-card">
-                        <div class="stat-icon">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
+                        <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
                         <div class="stat-info">
                             <h6>Total Users</h6>
                             <h3 id="totalUsers">0</h3>
@@ -141,9 +145,7 @@ $role = Session::get("role");
 
                 <div class="col-xl-3 col-md-6">
                     <div class="stat-card blue-card">
-                        <div class="stat-icon">
-                            <i class="bi bi-person-vcard-fill"></i>
-                        </div>
+                        <div class="stat-icon"><i class="bi bi-person-vcard-fill"></i></div>
                         <div class="stat-info">
                             <h6>Total Employees</h6>
                             <h3 id="totalEmployees">0</h3>
@@ -154,9 +156,7 @@ $role = Session::get("role");
 
                 <div class="col-xl-3 col-md-6">
                     <div class="stat-card green-card">
-                        <div class="stat-icon">
-                            <i class="bi bi-person-check-fill"></i>
-                        </div>
+                        <div class="stat-icon"><i class="bi bi-person-check-fill"></i></div>
                         <div class="stat-info">
                             <h6>Active Employees</h6>
                             <h3 id="activeEmployees">0</h3>
@@ -167,9 +167,7 @@ $role = Session::get("role");
 
                 <div class="col-xl-3 col-md-6">
                     <div class="stat-card orange-card">
-                        <div class="stat-icon">
-                            <i class="bi bi-diagram-3-fill"></i>
-                        </div>
+                        <div class="stat-icon"><i class="bi bi-diagram-3-fill"></i></div>
                         <div class="stat-info">
                             <h6>Total Departments</h6>
                             <h3 id="totalDepartments">0</h3>
@@ -179,28 +177,21 @@ $role = Session::get("role");
                 </div>
             </div>
 
+            <!-- CHART -->
             <div class="content-card mb-4">
                 <div class="card-header-custom">
-                    <div>
-                        <h4>Employee Status Overview</h4>
-                        <p>Visual summary of employee status distribution</p>
-                    </div>
+                    <h4>Employee Status Overview</h4>
                 </div>
-
                 <div class="chart-wrapper">
                     <canvas id="employeeStatusChart"></canvas>
                 </div>
             </div>
 
+            <!-- TABLE -->
             <div class="content-card">
                 <div class="card-header-custom">
-                    <div>
-                        <h4>Recent Employees</h4>
-                        <p>Latest employee records added to the system</p>
-                    </div>
-                    <a href="employees.php" class="btn view-all-btn">
-                        <i class="bi bi-arrow-right-circle me-2"></i>View All
-                    </a>
+                    <h4>Recent Employees</h4>
+                    <a href="employees.php" class="btn view-all-btn">View All</a>
                 </div>
 
                 <div class="table-responsive">
@@ -217,7 +208,7 @@ $role = Session::get("role");
                         </thead>
                         <tbody id="recentEmployeesTable">
                             <tr>
-                                <td colspan="6" class="text-center py-4">Loading dashboard data...</td>
+                                <td colspan="6" class="text-center">Loading...</td>
                             </tr>
                         </tbody>
                     </table>
@@ -232,6 +223,8 @@ $role = Session::get("role");
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../assets/js/auth.js"></script>
     <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/darkmode.js"></script>
+
 </body>
 
 </html>

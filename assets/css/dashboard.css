@@ -9,6 +9,7 @@ body {
     background: #f4f7fb;
     color: #1f2937;
     overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .dashboard-wrapper {
@@ -26,6 +27,7 @@ body {
     top: 0;
     box-shadow: 8px 0 24px rgba(49, 46, 129, 0.15);
     z-index: 999;
+    transition: background 0.3s ease;
 }
 
 .sidebar-inner {
@@ -66,6 +68,7 @@ body {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.10);
 }
+
 .brand-icon {
     width: 52px;
     height: 52px;
@@ -163,6 +166,7 @@ body {
 .main-content {
     flex: 1;
     padding: 28px;
+    transition: background 0.3s ease;
 }
 
 /* Topbar */
@@ -179,6 +183,12 @@ body {
     display: flex;
     align-items: center;
     gap: 14px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .mobile-menu-btn {
@@ -204,12 +214,14 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #111827;
+    transition: color 0.3s ease;
 }
 
 .page-subtitle {
     margin: 6px 0 0;
     color: #6b7280;
     font-size: 15px;
+    transition: color 0.3s ease;
 }
 
 .role-badge {
@@ -221,6 +233,7 @@ body {
     font-size: 14px;
     display: inline-flex;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 /* Welcome Banner */
@@ -327,6 +340,7 @@ body {
     border-radius: 22px;
     padding: 22px;
     box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
+    transition: background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .card-header-custom {
@@ -343,12 +357,14 @@ body {
     font-size: 22px;
     font-weight: 700;
     color: #111827;
+    transition: color 0.3s ease;
 }
 
 .card-header-custom p {
     margin: 5px 0 0;
     color: #6b7280;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
 
 .view-all-btn {
@@ -373,6 +389,7 @@ body {
     font-size: 14px;
     border: none;
     padding: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .custom-table tbody td {
@@ -380,6 +397,37 @@ body {
     vertical-align: middle;
     border-color: #f1f5f9;
     font-size: 14px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Chart */
+.chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 18px;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+/* Dark Mode Button */
+.dark-toggle-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+    transition: all 0.3s ease;
+}
+
+.dark-toggle-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
 }
 
 /* Overlay */
@@ -397,14 +445,155 @@ body {
     opacity: 1;
     visibility: visible;
 }
-.chart-wrapper {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
-    padding: 18px;
+
+/* =========================
+   DARK MODE - IMPROVED
+========================= */
+body.dark-mode {
+    background: #0b1120;
+    color: #e2e8f0;
+}
+
+body.dark-mode .main-content {
+    background: #0b1120;
+}
+
+body.dark-mode .sidebar {
+    background: linear-gradient(180deg, #111827, #172554, #1e1b4b);
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .brand-box {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .brand-icon {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+body.dark-mode .sidebar-menu a {
+    color: #e5e7eb;
+}
+
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-menu a.active {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+body.dark-mode .sidebar-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .page-title,
+body.dark-mode .card-header-custom h4 {
+    color: #f8fafc;
+}
+
+body.dark-mode .page-subtitle,
+body.dark-mode .card-header-custom p {
+    color: #94a3b8;
+}
+
+body.dark-mode .role-badge {
+    background: rgba(99, 102, 241, 0.16);
+    color: #c7d2fe;
+    border: 1px solid rgba(99, 102, 241, 0.30);
+}
+
+body.dark-mode .welcome-banner {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #0f766e);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .content-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .chart-wrapper {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+}
+
+body.dark-mode .custom-table thead th {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+body.dark-mode .custom-table tbody td {
+    color: #cbd5e1;
+    border-color: #1f2937;
+}
+
+body.dark-mode .table {
+    color: #cbd5e1;
+}
+
+body.dark-mode .view-all-btn {
+    background: linear-gradient(135deg, #4338ca, #6366f1);
+}
+
+body.dark-mode .dark-toggle-btn {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    box-shadow: 0 8px 18px rgba(249, 115, 22, 0.28);
+}
+
+body.dark-mode .logout-btn {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #fca5a5;
+    border: 1px solid #374151;
+}
+
+body.dark-mode .logout-btn i {
+    color: #f87171;
+}
+
+body.dark-mode .logout-btn:hover {
+    background: linear-gradient(135deg, #374151, #1f2937);
+    color: #fecaca;
+}
+
+body.dark-mode .mobile-menu-btn {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+/* DARK MODE TABLE FIX */
+body.dark-mode .table-responsive {
+    background: transparent;
+}
+
+body.dark-mode .custom-table {
+    background: #111827;
+    color: #cbd5e1;
+}
+
+body.dark-mode .custom-table tbody tr {
+    background: #111827;
+}
+
+body.dark-mode .custom-table tbody tr:nth-child(even) {
+    background: #0f172a;
+}
+
+body.dark-mode .custom-table tbody td {
+    background: transparent;
+    color: #cbd5e1;
+    border-color: #1f2937;
+}
+
+body.dark-mode .custom-table thead th {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #1f2937;
+}
+
+body.dark-mode .custom-table tbody tr:hover {
+    background: #172033;
+}
+
+body.dark-mode .custom-table tbody tr:hover td {
+    color: #f8fafc;
 }
 
 /* Responsive */
@@ -446,12 +635,12 @@ body {
     }
 
     .sidebar-top {
-    padding-top: 42px;
-}
+        padding-top: 42px;
+    }
 
-.brand-box {
-    padding: 12px 52px 12px 14px;
-}
+    .brand-box {
+        padding: 12px 52px 12px 14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -489,5 +678,9 @@ body {
 
     .topbar-right {
         width: 100%;
+    }
+
+    .chart-wrapper {
+        height: 280px;
     }
 }
