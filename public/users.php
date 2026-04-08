@@ -82,6 +82,10 @@ $role = Session::get("role");
                 </div>
 
                 <div class="topbar-right">
+                    <button id="darkModeToggle" class="dark-toggle-btn me-3">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
                     <span class="role-badge">
                         <i class="bi bi-person-badge-fill me-1"></i>
                         <?php echo ucfirst(htmlspecialchars($role)); ?>
@@ -497,6 +501,7 @@ $role = Session::get("role");
     </script>
     <script src="../assets/js/auth.js"></script>
     <script src="../assets/js/users.js"></script>
+    <script src="../assets/js/darkmode.js"></script>
 </body>
 
 </html>
