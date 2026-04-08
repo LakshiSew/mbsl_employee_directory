@@ -1,7 +1,7 @@
 <?php
 
 require_once "../../app/config/db.php";
-require_once "../../app/controllers/UserController.php";
+require_once "../../app/controllers/ProfileController.php";
 require_once "../../app/helpers/Session.php";
 require_once "../../app/helpers/Response.php";
 
@@ -14,19 +14,15 @@ if (!Session::has("user_id")) {
 $database = new Database();
 $conn = $database->connect();
 
-$userController = new UserController($conn);
+$profileController = new ProfileController($conn);
 
 $method = $_SERVER["REQUEST_METHOD"];
 $action = $_POST["_method"] ?? "";
 
 if ($method === "GET") {
-    $userController->index();
+    $profileController->show();
 } elseif ($method === "POST" && $action === "PUT") {
-    $userController->update();
-} elseif ($method === "POST" && $action === "DELETE") {
-    $userController->destroy();
-} elseif ($method === "POST") {
-    $userController->store();
+    $profileController->update();
 } else {
     Response::error("Method not allowed.", 405);
 }
