@@ -220,6 +220,25 @@ If the system does not run correctly, check:
 
 
 
+### 👤 My Profile - Dark_Mode
+![Profile](screenshots/dark_profile.png)
+
+
+### 📊 Dashboard - Dark_Mode
+![Dashboard](screenshots/dark_dashboard.png)
+
+---
+
+### 👤 Users Management - Dark_Mode
+![Users](screenshots/dark_user.png)
+
+---
+
+### 🧑‍💼 Employees Management - Dark_Mode
+![Employees](screenshots/dark_employee.png)
+
+
+
 
 ## 🔐 Login Credentials
 
@@ -242,3 +261,16 @@ The system includes predefined users for testing purposes.
 |------|------|----------|
 | Staff User | staff@gmail.com | password (staff123)|
 | Himal Gamage | himalka123@gmail.com | password (himal123)|
+
+##//////////////////////////////////////////////////////ER Diagram//////////////////////////////////////////////////##
+
+
+## 🗂️ ER Diagram
+
+The database design consists of two main entities: **Users** and **Employees**.
+
+- **Users**: Stores system login details for admin and staff users.
+- **Employees**: Stores employee directory information such as department, designation, and status.
+- A **User (Admin)** can manage multiple employees.
+
+![ER Diagram](screenshots/ER.png)
