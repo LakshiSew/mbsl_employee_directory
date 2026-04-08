@@ -137,11 +137,22 @@ $role = Session::get("role");
                         <p>Search, filter, and view employee records</p>
                     </div>
 
-                    <?php if ($role === "admin") { ?>
-                    <button type="button" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
-                        <i class="bi bi-person-plus-fill me-2"></i>Add Employee
-                    </button>
-                    <?php } ?>
+                    <div class="header-action-buttons">
+                        <a href="../api/employees/export.php?type=csv" class="btn export-csv-btn">
+                            <i class="bi bi-file-earmark-excel-fill me-2"></i>Export CSV
+                        </a>
+
+                        <a href="../api/employees/export.php?type=pdf" class="btn export-pdf-btn">
+                            <i class="bi bi-file-earmark-pdf-fill me-2"></i>Export PDF
+                        </a>
+
+                        <?php if ($role === "admin") { ?>
+                        <button type="button" class="btn add-btn" data-bs-toggle="modal"
+                            data-bs-target="#addEmployeeModal">
+                            <i class="bi bi-person-plus-fill me-2"></i>Add Employee
+                        </button>
+                        <?php } ?>
+                    </div>
                 </div>
 
                 <div id="messageBox"></div>
