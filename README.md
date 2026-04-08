@@ -217,3 +217,28 @@ If the system does not run correctly, check:
 
 ### 📱 Mobile Profile
 ![Mobile Profile](screenshots/mobile_profile.png)
+
+
+
+
+## 🔐 Login Credentials
+
+The system includes predefined users for testing purposes.
+
+### 👑 Admin Users
+
+| Name | Email | Password |
+|------|------|----------|
+| Main Admin | admin@gmail.com | password (admin123) |
+| Lakshi Sew | lakshi123@gmail.com | password (lakshi123)|
+| Nuwan Herath | nuwan@gmail.com | password (nuwan123)|
+| Hishu Gayantha | hishu@gmail.com | password (hishu123)|
+
+---
+
+### 👤 Normal Users (Staff)
+
+| Name | Email | Password |
+|------|------|----------|
+| Staff User | staff@gmail.com | password (staff123)|
+| Himal Gamage | himalka123@gmail.com | password (himal123)|
