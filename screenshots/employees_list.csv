@@ -1,0 +1,6 @@
+"Employee Code","Full Name",Email,Phone,Department,Designation,Gender,"Join Date",Status,Address
+EMP005,"Suraj Perera",suraj@gmail.com,0773275689,IT,QA,Female,2026-04-25,Active,"No:10, Hakmana,Matara"
+EMP004,"Sashini Jayawardena",sashini@company.com,0763456789,Marketing,"Marketing Officer",Female,2021-11-20,Inactive,Kurunegala
+EMP003,"Ravindu Fernando","ravindu@company.com ",0759876543,IT,"Software Engineer",Male,2022-09-01,"On Leave",Kandy
+EMP002,"Kavindi Silva",kavindi@company.com,0712345678,Finance,"Account Assistant",Female,2023-06-15,Active,Gampaha
+EMP001,"Nimal Perera",nimal@company.com,0771234567,"Human Resources","HR Executive",Male,2024-01-10,Active,Colombo

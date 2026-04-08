@@ -138,4 +138,82 @@ If the system does not run correctly, check:
 
 
 
-Images screenshorts ?
+##//////////////////////////////////////////////////////System Screenshots//////////////////////////////////////////////////##
+
+
+
+## 📸 System Screenshots
+
+> The following screenshots demonstrate the system interface, key features, and responsive design across desktop and mobile devices.
+
+---
+
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+---
+
+### 📝 Register Page
+![Register](screenshots/register.png)
+
+---
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### 👤 Users Management
+![Users](screenshots/user.png)
+
+---
+
+### 🧑‍💼 Employees Management
+![Employees](screenshots/employee.png)
+
+---
+
+### ➕ Add User
+![Add User](screenshots/add-user.png)
+
+---
+
+### ➕ Add Employee
+![Add Employee](screenshots/add-employee.png)
+
+---
+
+### 👤 My Profile
+![Profile](screenshots/profile.png)
+
+---
+
+## 📱 Mobile View
+
+### 📱 Mobile Login
+![Mobile Login](screenshots/mobile_login.png)
+
+---
+
+### 📱 Mobile Register
+![Mobile Register](screenshots/mobile_register.png)
+
+---
+
+### 📱 Mobile Dashboard
+![Mobile Dashboard](screenshots/mobile_dashboard.png)
+
+---
+
+### 📱 Mobile Users
+![Mobile Users](screenshots/mobile_user.png)
+
+---
+
+### 📱 Mobile Employees
+![Mobile Employees](screenshots/mobile_employee.png)
+
+---
+
+### 📱 Mobile Profile
+![Mobile Profile](screenshots/mobile_profile.png)
